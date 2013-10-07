@@ -1,0 +1,9 @@
+ngx_addon_name=ngx_http_methods_filter_module
+ngx_feature_libs=""
+HTTP_MODULES="$HTTP_MODULES ngx_http_methods_filter_module"
+CORE_INCS="$CORE_INCS \
+    $ngx_addon_dir/src \
+    $ngx_addon_dir/include"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS \
+    ${ngx_addon_dir}/src/ngx_http_methods_filter_module.c"
+CORE_LIBS="$CORE_LIBS $ngx_feature_libs"
